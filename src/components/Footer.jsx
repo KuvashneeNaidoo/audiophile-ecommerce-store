@@ -2,6 +2,7 @@ import Logo from "../assets/shared/desktop/logo.svg";
 import FacebookIcon from "../assets/shared/desktop/icon-facebook.svg";
 import TwitterIcon from "../assets/shared/desktop/icon-twitter.svg";
 import InstagramIcon from "../assets/shared/desktop/icon-instagram.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,33 +14,33 @@ const Footer = () => {
           <nav>
             <ul className="flex flex-col items-center md:flex-row lg:flex-row lg:items-start gap-8 uppercase font-bold tracking-widest">
               <li>
-                <a href="/" className="hover:text-[#D87D4A] transition-colors">
+                <Link to="/" className="hover:text-[#D87D4A] transition-colors">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/headphones"
+                <Link
+                  to="/headphones"
                   className="hover:text-[#D87D4A] transition-colors"
                 >
                   Headphones
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/speakers"
+                <Link
+                  to="/speakers"
                   className="hover:text-[#D87D4A] transition-colors"
                 >
                   Speakers
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/earphones"
+                <Link
+                  to="/earphones"
                   className="hover:text-[#D87D4A] transition-colors"
                 >
                   Earphones
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
